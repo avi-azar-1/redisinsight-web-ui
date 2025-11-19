@@ -9,16 +9,23 @@ install docker (on linux via yum, on windows via docker desktop) and run (via ba
 ```bash
 docker load --input (path)/redisinsight.tar
 docker run -d --name redisinsight -p 5540:5540 -v (your-disk-here):/data redis/redisinsight:latest
-(will return container id)
 ```
 
 check if running and check logs for problems:
 ```bash
 docker ps
-docker logs (container-id)
+docker logs redisinsight
 ```
 
 you can then accsess the webui from:
 http://(ip-of-server-running-docker):5540
 
 if docker stop or shows permission error, disable selinux on server
+
+for automatic start: 
+```bash
+systemctl enable podman
+vi /usr/lib/systemd/system/podman.service
+after ExecStart add:
+ExecStartPost=/usr/bin/podman start redisinsight
+```
