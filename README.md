@@ -1,8 +1,7 @@
 # redisinsight-web-ui
 a docker image to run redisinsight with web interface
 
-to deploy on a linux/windows: 
-
+**to deploy on a linux/windows: **
 download docker image redisinsight.tar from
 https://drive.google.com/drive/folders/1LNpvCJ5fa8HvaaUtBj5ub-QbNL7XnZzL?usp=sharing
 
