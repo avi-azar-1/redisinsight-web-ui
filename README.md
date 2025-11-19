@@ -20,7 +20,7 @@ docker logs redisinsight
 you can then accsess the webui from:
 http://(ip-of-server-running-docker):5540
 
-if docker stop or shows permission error, disable selinux on server
+if docker stop or shows permission error, disable selinux on server nad give 777 to data dir
 
 for automatic start: 
 ```bash
