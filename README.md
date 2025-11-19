@@ -7,8 +7,8 @@ https://drive.google.com/drive/folders/1LNpvCJ5fa8HvaaUtBj5ub-QbNL7XnZzL?usp=sha
 
 install docker (on linux via yum, on windows via docker desktop) and run (via bash/cmd):
 ```bash
-docker load --input <path>/redisinsight.tar
-docker run -d --name redisinsight -p 5540:5540 -v /<your-disk-here/>:/data redis/redisinsight:latest
+docker load --input \<path\>/redisinsight.tar
+docker run -d --name redisinsight -p 5540:5540 -v <your-disk-here>:/data redis/redisinsight:latest
 ```
 
 you can then accsess the webui from:
